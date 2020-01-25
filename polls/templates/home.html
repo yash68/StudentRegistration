@@ -1,0 +1,14 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Home Page</title>
+	<link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}">
+</head>
+<body style="background-image: url({% static 'image/Koala.jpg' %});">
+	<a href="{% url 'add' %}"><h1 class="heading">Add Student</h1></a>
+	<a href="{% url 'show' %}"><h1>Show Student</h1></a>
+	<a href="{% url 'register' %}"><h1>Register Your Self Here</h1></a>
+	
+</body>
+</html>
